@@ -10,7 +10,7 @@
 	"keywords": [
 		"studynotion-backend"
 	],
-	"author": "Siddharth Dagar",
+	"author": "Aashish kumar singh",
 	"license": "ISC",
 	"dependencies": {
 		"bcrypt": "^5.1.0",
