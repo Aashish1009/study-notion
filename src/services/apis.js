@@ -1,4 +1,4 @@
-import env from "react-dotenv"
+// import env from "react-dotenv"
 const BASE_URL = process.env.REACT_APP_BASE_URL
 
 

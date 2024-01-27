@@ -83,10 +83,7 @@ export default function CourseInformationForm() {
     // console.log(data)
 
     if (editCourse) {
-      // const currentValues = getValues()
-      // console.log("changes after editing form values:", currentValues)
-      // console.log("now course:", course)
-      // console.log("Has Form Changed:", isFormUpdated())
+     
       if (isFormUpdated()) {
         const currentValues = getValues()
         const formData = new FormData()
@@ -231,12 +228,7 @@ export default function CourseInformationForm() {
           id="courseCategory"
           className="form-style w-full"
         >
-          {/* <option value="a" >
-            Choose a Category a
-          </option>
-          <option value="b" >
-            Choose a Category b
-          </option> */}
+         
           {!loading &&
             courseCategories?.map((category, indx) => (
               <option key={indx} value={category?._id}>

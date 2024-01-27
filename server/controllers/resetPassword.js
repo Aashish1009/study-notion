@@ -12,7 +12,7 @@ exports.resetPasswordToken = async (req, res) => {
         message: `This Email: ${email} is not Registered With Us Enter a Valid Email `,
       })
     }
-    const token = crypto.randomBytes(20).toString("hex")
+    const token = crypto.randomBytes(20).toString("hex") 
 
     const updatedDetails = await User.findOneAndUpdate(
       { email: email },
@@ -22,9 +22,9 @@ exports.resetPasswordToken = async (req, res) => {
       },
       { new: true }
     )
-    console.log("DETAILS", updatedDetails)
+    // console.log("DETAILS", updatedDetails)
 
-    // const url = `http://localhost:3000/update-password/${token}`
+    // const url = `http://localhost:3000/update-password/${token}` ye dekhna h
     const url = `https://studynotion-studynotion-project.vercel.app/update-password/${token}`
 
     await mailSender(

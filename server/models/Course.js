@@ -2,8 +2,12 @@ const mongoose = require("mongoose")
 
 // Define the Courses schema
 const coursesSchema = new mongoose.Schema({
-  courseName: { type: String },
-  courseDescription: { type: String },
+  courseName: { 
+    type: String
+   },
+  courseDescription: { 
+    type: String
+   },
   instructor: {
     type: mongoose.Schema.Types.ObjectId,
     required: true,
@@ -53,7 +57,10 @@ const coursesSchema = new mongoose.Schema({
     type: String,
     enum: ["Draft", "Published"],
   },
-  createdAt: { type: Date, default: Date.now },
+  createdAt: {
+     type: Date,
+      default: Date.now
+     },
 })
 
 // Export the Courses model

@@ -109,6 +109,7 @@ const ContactUsForm = () => {
         <div className="flex gap-5">
           <div className="flex w-[81px] flex-col gap-2">
             <select
+          //yaha pe id aur name firstname kyu h??
               type="text"
               name="firstname"
               id="firstname"

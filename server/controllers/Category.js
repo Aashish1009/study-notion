@@ -15,10 +15,10 @@ exports.createCategory = async (req, res) => {
       name: name,
       description: description,
     })
-    console.log(CategorysDetails)
+    // console.log(CategorysDetails)
     return res.status(200).json({
       success: true,
-      message: "Categorys Created Successfully",
+      message: "Categories Created Successfully",
     })
   } catch (error) {
     return res.status(500).json({
@@ -56,17 +56,17 @@ exports.categoryPageDetails = async (req, res) => {
       })
       .exec()
 
-    console.log("SELECTED COURSE", selectedCategory)
+    // console.log("SELECTED COURSE", selectedCategory)
     // Handle the case when the category is not found
     if (!selectedCategory) {
-      console.log("Category not found.")
+      // console.log("Category not found.")
       return res
         .status(404)
         .json({ success: false, message: "Category not found" })
     }
     // Handle the case when there are no courses
     if (selectedCategory.courses.length === 0) {
-      console.log("No courses found for the selected category.")
+      // console.log("No courses found for the selected category.")
       return res.status(404).json({
         success: false,
         message: "No courses found for the selected category.",
@@ -86,7 +86,7 @@ exports.categoryPageDetails = async (req, res) => {
         match: { status: "Published" },
       })
       .exec()
-    console.log()
+    // console.log()
     // Get top-selling courses across all categories
     const allCategories = await Category.find()
       .populate({

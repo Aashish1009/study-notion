@@ -72,7 +72,7 @@ const TimelineSection = () => {
                 types of courses
               </h1>
             </div>
-            <div></div>
+            {/* <div></div>  change done*/}
           </div>
           <img
             src={TimeLineImage}

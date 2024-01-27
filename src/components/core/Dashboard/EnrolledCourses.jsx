@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import ProgressBar from "@ramonak/react-progress-bar"
-import { BiDotsVerticalRounded } from "react-icons/bi"
+// import { BiDotsVerticalRounded } from "react-icons/bi"
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
 
@@ -18,7 +18,7 @@ export default function EnrolledCourses() {
         const res = await getUserEnrolledCourses(token) // Getting all the published and the drafted courses
 
         // Filtering the published course out
-        const filterPublishCourse = res.filter((ele) => ele.status !== "Draft")
+        const filterPublishCourse = res.filter((ele) => ele.status !== "Draft")//student me draft kyu??
         // console.log(
         //   "Viewing all the couse that is Published",
         //   filterPublishCourse

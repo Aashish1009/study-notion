@@ -38,7 +38,7 @@ export default function RenderCartCourses() {
                   size={20}
                   edit={false}
                   activeColor="#ffd700"
-                  emptyIcon={<FaStar />}
+                  emptyIcon={<FaStar />}//ye dono same kyu h ?  
                   fullIcon={<FaStar />}
                 />
                 <span className="text-richblack-400">

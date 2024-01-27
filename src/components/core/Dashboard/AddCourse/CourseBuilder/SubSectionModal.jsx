@@ -27,9 +27,7 @@ export default function SubSectionModal({
     getValues,
   } = useForm()
 
-  // console.log("view", view)
-  // console.log("edit", edit)
-  // console.log("add", add)
+
 
   const dispatch = useDispatch()
   const [loading, setLoading] = useState(false)
@@ -103,7 +101,7 @@ export default function SubSectionModal({
       }
       return
     }
-
+                                                                                                                                              
     const formData = new FormData()
     formData.append("sectionId", modalData)
     formData.append("title", data.lectureTitle)
